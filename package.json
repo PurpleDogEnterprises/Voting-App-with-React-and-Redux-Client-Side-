@@ -4,7 +4,7 @@
   "description": "The client-side setup for a voting app using React, Redux, Babel, Socket.io, Webpack, Mocha, Chai, and more",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js \"test/**/*@(.js|.jsx)\""
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +14,7 @@
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
     "chai": "^3.5.0",
+    "chai-immutable": "^1.6.0",
     "jsdom": "^9.9.1",
     "mocha": "^3.2.0",
     "webpack": "^1.14.0",
@@ -24,5 +25,8 @@
       "es2015",
       "react"
     ]
+  },
+  "dependencies": {
+    "immutable": "^3.8.1"
   }
 }
