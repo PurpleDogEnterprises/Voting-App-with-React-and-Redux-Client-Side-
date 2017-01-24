@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "The client-side setup for a voting app using React, Redux, Babel, Socket.io, Webpack, Mocha, Chai, and more",
   "main": "index.js",
-  "scripts": {
+  "scripts": {},
   "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js \"test/**/*@(.js|.jsx)\""
   "test:watch": "npm run test -- --watch"
-  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -28,6 +27,7 @@
     ]
   },
   "dependencies": {
-    "immutable": "^3.8.1"
+    "immutable": "^3.8.1",
+    "react-router": "^2.0.0"
   }
 }
