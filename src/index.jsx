@@ -11,6 +11,6 @@ const routes = <Route component={App}>
 </Route>;
 
 ReactDOM.render(
-  <Voting pair={pair} />,
+  <Router history={hashHistory}>{routes}</Router>,
   document.getElementById('app')
 );
