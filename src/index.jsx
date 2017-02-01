@@ -21,6 +21,11 @@ socket.on('state', state =>
   store.dispatch(setState(state))
 );
 
+const createStoreWithMiddleware = applyMiddleware(
+  remoteActionMiddleware(socket)
+)(createStore);
+const store = createStoreWithMiddleware(reducer);
+
 const routes = <Route component={App}>
   <Route path="/results" component={ResultsContainer} />
   <Route path="/" component={VotingContainer} />
