@@ -1,12 +1,10 @@
 {
-  "name": "voting-app-client",
+  "name": "voting-client",
   "version": "1.0.0",
-  "description": "The client-side setup for a voting app using React, Redux, Babel, Socket.io, Webpack, Mocha, Chai, and more",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node index.jsx",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js \"test/**/*@(.js|.jsx)\""
-    "test:watch": "npm run test -- --watch"
   },
   "author": "",
   "license": "ISC",
